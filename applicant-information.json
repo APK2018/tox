@@ -1,0 +1,157 @@
+[
+  {
+    "name": "Герасемчукова Максимилиана",
+    "status": "Работаю, но активно ищу работу",
+    "skills": [
+      {
+        "profession": "Слесарь-сантехник",
+        "date": "15.09.22"
+      }
+    ],
+    "birthday": "27.01.1983",
+    "age": "33 года",
+    "zodiac": "Водолей",
+    "response": {
+      "profession": "Плотник",
+      "date": "03.02.22"
+    },
+    "date-upload": "25.09.2019",
+    "resource-upload": "zarplata.ru",
+    "phone": "+79599999999",
+    "phone-operator": "Теле 2",
+    "phone-region": "Нижегородская область",
+    "live-region": "Балахна",
+    "live-district": "Нижегородская область",
+    "who-append": "Подбор по подписке",
+    "online": "14.10.2021 10:15",
+    "favorite": "В избранном",
+    "comments": [
+      {
+        "date": "01.07.2019 14:50",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolor."
+      },
+      {
+        "date": "01.05.2019 13:25",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. adipisicing Dolorem, dolor.adipisicing adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolor. Dolorem, dolor Dolorem, dolor Dolorem, dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolor. Dolorem, dolor Dolorem, dolor Dolorem, dolor"
+      },
+      {
+        "date": "01.05.2019 13:25",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolor. Dolorem, dolor Dolorem, dolor Dolorem, dolor"
+      },
+      {
+        "date": "01.05.2019 13:10",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolor. Dolorem, dolor Dolorem, dolor Dolorem, dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolor. Dolorem, dolor Dolorem, dolor Dolorem, dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolor. Dolorem, dolor Dolorem, dolor Dolorem, dolor"
+      }
+    ],
+    "operator-photo": {
+      "src": "assets/images/operator-photo/tele2.png",
+      "alt": "operator"
+    },
+    "photo": {
+      "src": "assets/images/applicant/photo.png",
+      "alt": "applicant"
+    }
+  },
+  {
+    "name": "Герасемчукова Жуковка",
+    "status": "Безработная",
+    "skills": [
+      {
+        "profession": "Менеджер по продажам",
+        "date": "15.04.22"
+      },
+      {
+        "profession": "Секретарь",
+        "date": "21.12.22"
+      },
+      {
+        "profession": "Охранник",
+        "date": "12.10.22"
+      },
+      {
+        "profession": "Программист",
+        "date": "13.05.22"
+      }
+    ],
+    "birthday": "27.01.1957",
+    "age": "64 года",
+    "zodiac": "Водолей",
+    "response": {
+      "profession": "Менеджер по продажам",
+      "date": "03.02.22"
+    },
+    "date-upload": "25.09.2019",
+    "resource-upload": "vsevn.ru",
+    "phone": "+79599999999",
+    "phone-operator": "Теле 2",
+    "phone-region": "Нижегородская область",
+    "live-region": "Балахна",
+    "live-district": "Нижегородская область",
+    "who-append": "Отклик",
+    "online": "Онлайн",
+    "favorite": "В избранном",
+    "comments": {
+      "date": "",
+      "text": [""]
+    },
+    "operator-photo": {
+      "src": "assets/images/operator-photo/tele2.png",
+      "alt": "operator"
+    },
+    "photo": {
+      "src": "assets/images/applicant/photo.png",
+      "alt": "applicant"
+    }
+  },
+  {
+    "name": "Егоров Сергей",
+    "status": "Безработный",
+    "skills": [
+      {
+        "profession": "Менеджер по продажам",
+        "date": "15.04.22"
+      },
+      {
+        "profession": "Секретарь",
+        "date": "21.12.22"
+      },
+      {
+        "profession": "Охранник",
+        "date": "12.10.22"
+      },
+      {
+        "profession": "Программист",
+        "date": "13.05.21"
+      }
+    ],
+    "birthday": "27.08.2001",
+    "age": "21 года",
+    "zodiac": "Дева",
+    "response": {
+      "profession": "Менеджер по продажам",
+      "date": "03.02.22"
+    },
+    "date-upload": "25.09.2019",
+    "resource-upload": "vsevn.ru",
+    "phone": "+79599999999",
+    "phone-operator": "Теле 2",
+    "phone-region": "Нижегородская область",
+    "live-region": "Нижний новгород",
+    "live-district": "Самарский район",
+    "who-append": "Подбор от ВВН",
+    "online": "Онлайн",
+    "favorite": "В черном списке",
+    "comments": {
+      "date": "",
+      "text": [""]
+    },
+    "operator-photo": {
+      "src": "assets/images/operator-photo/tele2.png",
+      "alt": "operator"
+    },
+    "photo": {
+      "src": "assets/images/applicant/photo.png",
+      "alt": "applicant"
+    }
+  }
+]

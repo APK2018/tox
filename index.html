@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/correct-calendar.css">
+    <link rel="stylesheet" href="./css/cap.css">
+    <link rel="stylesheet" href="./blocks/filters/filters.css">
+    <link rel="stylesheet" href="./blocks/create-applicant/create-applicant.css">
+    <link rel="stylesheet" href="./blocks/fast-search/fast-search-functional.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/icomoon-icon-applicant.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <!-- <div class="start-popup-cover js-start-popup-cover"></div>
+    <div class="start-popup js-start-popup">
+        <span class="start-popup__title">Внимание!</span>
+        <span class="start-poup__warning-info">Важная информация!</span>
+        <span class="start-popup__caption">У вас скоро закончится срок публикации у объявлений в газете «Все Вакансии Нижнего»!</span>
+        <span class="start-popup__days">Осталось <span class="start-popup__day">пять</span> дней!</span>
+        <span class="start-popup__bottom-caption">Если вы не продлите выходы объявлений в газете «Все Вакансии Нижнего», то наша команда поддержки своих клиентов прекратит заниматься поиском и подбором соискателей для вашей компании.</span>
+        <div class="start-popup__phone-manager-conainer">
+            <span class="start-popup__phone-number-caption">Телефон нашего менеджера:</span>
+            <span class="start-popup__phone-number">+7952-777-0002</span>
+        </div>
+        <div class="start-popup__close js-start-popup-close"></div>
+    </div> -->
+    <div class="main-content">
+        <div class="title-page">
+            <h1 class="title-page__title">
+                Соискатели с открытыми контактами
+            </h1>
+            <span class="title-page__list-about">
+                <span class="title-page__list-caption">Главная</span>
+                <span class="title-page__list-separator">/</span>
+                <span class="title-page__list-description">Соискатели с открытыми контактами</span>
+                <div class="title-page__applicant-add js-applicant-add"></div>
+            </span>
+        </div>
+        <div class="filters">
+            <div class="filters__selects js-all-filters-container">
+                <div class="filter-region-container-pc">
+                    <div class="filters__select filters__region js-to-regions js-filter" data-title="Регион/Город" data-inform="">
+                        <div class="filters__region-title filters__title js-title">
+                            <div class="filters__caption js-filters-caption-join">
+                                <div class="filters__caption-description-container">
+                                    <span class="filters__caption-description js-filters-caption">
+                                    </span>
+                                </div>
+                                <div class="filters__arrow js-arrow">
+                                    <div class="icon-arrow-down"></div>
+                                </div>
+                            </div>
+                            <div class="filters__functions-section">
+                                <div class="filters__close-list js-close-list">
+                                    <div class="icon-close-down"></div>
+                                    <div class="filters__tab-information-cross">
+                                        <div class="filters__tab-information-cross-back"></div>
+                                        <div class="filters__tab-information-decor">
+                                            <div class="filters__tab-information-decor-border"></div>
+                                        </div>
+                                        <span class="filters__tab-information-text">Очистить поле?</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filters__region-drop-down filters__drop-down js-drop-down">
+                            <div class="filters__search-region-container"> 
+                                <input type="text" class="filters__search-region js-filters-search" placeholder="Поиск">
+                            </div>
+                            <div class="filters__all-regions js-all-regions">
+                                <div class="filters__all-region-separator js-plus-region">+</div>
+                                <span class="filters__all-region-caption">Все регионы РФ</span>
+                            </div>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">Нижний новгород</span>
+                                    <span class="filters__region-numbers js-region-numbers">
+                                        (345)
+                                    </span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">Кстово</span>
+                                    <span class="filters__region-numbers js-region-numbers">
+                                        (45)
+                                    </span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">Балахна</span>
+                                    <span class="filters__region-numbers js-region-numbers">
+                                        (95)
+                                    </span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">Городец</span>
+                                    <span class="filters__region-numbers js-region-numbers">
+                                        (8)
+                                    </span>
+                                </span>
+                            </label>
+                            <div class="filters__list-all-regions js-list-all-regions">
+                                <label type="text" data-select="" class="filters__name-region js-name-region">
+                                    <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                    <span class="filters__region-caption js-filters-region-name">
+                                        <span class="filters__region-name js-region-name">Нижегородская область</span>
+                                        <span class="filters__region-numbers js-region-numbers">
+                                            (17 821)
+                                        </span>
+                                    </span>
+                                </label>
+                                <label type="text" data-select="" class="filters__name-region js-name-region">
+                                    <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                    <span class="filters__region-caption js-filters-region-name">
+                                        <span class="filters__region-name js-region-name">Московская область</span>
+                                        <span class="filters__region-numbers js-region-numbers">
+                                            (121)
+                                        </span>
+                                    </span>
+                                </label>
+                                <label type="text" data-select="" class="filters__name-region js-name-region">
+                                    <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                    <span class="filters__region-caption js-filters-region-name">
+                                        <span class="filters__region-name js-region-name">Краснодарский край</span>
+                                        <span class="filters__region-numbers js-region-numbers">
+                                            (645 888)
+                                        </span>
+                                    </span>
+                                </label>
+                                <label type="text" data-select="" class="filters__name-region js-name-region">
+                                    <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                    <span class="filters__region-caption js-filters-region-name">
+                                        <span class="filters__region-name js-region-name">Свердловская область</span>
+                                        <span class="filters__region-numbers js-region-numbers">
+                                            (1 876 999)
+                                        </span>
+                                    </span>
+                                </label>
+                                <label type="text" data-select="" class="filters__name-region js-name-region">
+                                    <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                    <span class="filters__region-caption js-filters-region-name">
+                                        <span class="filters__region-name js-region-name">Ростовская область</span>
+                                        <span class="filters__region-numbers js-region-numbers">
+                                            (0)
+                                        </span>
+                                    </span>
+                                </label>
+                                <label type="text" data-select="" class="filters__name-region js-name-region">
+                                    <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                    <span class="filters__region-caption js-filters-region-name">
+                                        <span class="filters__region-name js-region-name">Республика Башкортостан</span>
+                                        <span class="filters__region-numbers js-region-numbers">
+                                            (0)
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="filters__drop-down-apply js-drop-down-apply">
+                                Применить
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-age-container-pc">
+                    <div class="filters__select filters__region js-to-age js-filter" data-title="По возрасту" data-inform="">
+                        <div class="filters__region-title filters__title js-title">
+                            <div class="filters__caption js-filters-caption-join">
+                                <div class="filters__caption-description-container">
+                                    <span class="filters__caption-description js-filters-caption">
+                                    </span>
+                                </div>
+                                <div class="filters__arrow js-arrow">
+                                    <div class="icon-arrow-down"></div>
+                                </div>
+                            </div>
+                            <div class="filters__functions-section">
+                                <div class="filters__close-list js-close-list">
+                                    <div class="icon-close-down"></div>
+                                    <div class="filters__tab-information-cross">
+                                        <div class="filters__tab-information-cross-back"></div>
+                                        <div class="filters__tab-information-decor">
+                                            <div class="filters__tab-information-decor-border"></div>
+                                        </div>
+                                        <span class="filters__tab-information-text">Очистить поле?</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filters__region-drop-down filters__drop-down js-drop-down">
+                            <label type="text" data-select="" data-variant-select="all" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">По всем значениям</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">От 14</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">От 15</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">От 16</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">От 17</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">От 18</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">От 25</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">От 30</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">От 40</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">От 50</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region">
+                                <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">От 60</span>
+                                </span>
+                            </label>
+                            <div class="filters__drop-down-apply js-drop-down-apply">
+                                Применить
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-status-container-pc">
+                    <div class="filters__select filters__region js-to-status js-filter" data-title="По статусу" data-inform="">
+                        <div class="filters__region-title filters__title js-title">
+                            <div class="filters__caption js-filters-caption-join">
+                                <div class="filters__caption-description-container">
+                                    <span class="filters__caption-description js-filters-caption">
+                                    </span>
+                                </div>
+                                <div class="filters__arrow js-arrow">
+                                    <div class="icon-arrow-down"></div>
+                                </div>
+                            </div>
+                            <div class="filters__functions-section">
+                                <div class="filters__close-list js-close-list">
+                                    <div class="icon-close-down"></div>
+                                    <div class="filters__tab-information-cross">
+                                        <div class="filters__tab-information-cross-back"></div>
+                                        <div class="filters__tab-information-decor">
+                                            <div class="filters__tab-information-decor-border"></div>
+                                        </div>
+                                        <span class="filters__tab-information-text">Очистить поле?</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filters__region-drop-down filters__drop-down js-drop-down">
+                            <label type="text" data-select="" class="filters__name-region js-name-region-radio">
+                                <input type="radio" name="default" class="filters__region-radio js-region-radio">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">Берзаботный(ая)</span>
+                                </span>
+                            </label>
+                            <label type="text" data-select="" class="filters__name-region js-name-region-radio">
+                                <input type="radio" name="default" class="filters__region-radio js-region-radio">
+                                <span class="filters__region-caption js-filters-region-name">
+                                    <span class="filters__region-name js-region-name">Работает</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-calendar-container-all">
+                    <div class="calendar-filter js-calendar-filter">
+                        <div class="js-calendar-top-period">
+                            <div class="js-calendar-perid-day-left">
+                                <div class="js-calendar-perid-day-left-btn">
+                                    <div class="arrow-6">
+                                        <svg width="30px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+                                                <polygon class="arrow-6-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <polygon class="arrow-6-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                                            </g>
+                                            <polygon class="arrow-6-pl-fixed btn-day-left-transition-rotate" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="js-calendar-perid-day-left-btn-tab">На день назад</div>
+                                </div>
+                            </div>
+                            <div class="js-calendar-perid-month-left">
+                                <div class="js-calendar-perid-month-left-btn">
+                                    <div class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+                                                <polygon class="arrow-6-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <polygon class="arrow-6-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="js-calendar-perid-month-left-btn-tab">На месяц назад</div>
+                                </div>
+                            </div>
+                            <div class="js-calendar-perid-all-left">
+                                <div class="js-calendar-perid-all-left-btn">
+                                    <div class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+                                                <polygon class="arrow-6-pl arrow-all-period-left-1" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <polygon class="arrow-6-pl-fixed arrow-all-period-left-2" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="js-calendar-perid-all-left-btn-tab">За весь период</div>
+                                </div>
+                                <div class="js-calendar-perid-all-right-btn">
+                                    <div class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl arrow-all-period-right-1" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <polygon class="arrow-6-pl-fixed arrow-all-period-right-2" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="js-calendar-perid-all-right-btn-tab">
+                                        За весь период
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js-calendar-perid-month-right">
+                                <div class="js-calendar-perid-month-right-btn">
+                                    <div class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <polygon class="arrow-6-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="js-calendar-perid-month-right-btn-tab">На месяц вперед</div>
+                                </div>
+                            </div>
+                            <div class="js-calendar-perid-day-right">
+                                <div class="js-calendar-perid-day-right-btn">
+                                    <div class="arrow-6">
+                                        <svg width="18px" height="17px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g>
+                                                <polygon class="arrow-6-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <polygon class="arrow-6-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                                <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                                            </g>
+                                            <polygon class="arrow-6-pl-fixed btn-day-after-translate" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="js-calendar-perid-day-right-btn-tab">На день вперед</div>
+                                </div>
+                            </div>
+                        </div>
+                        <main class="main">
+                            <section class="filters">
+                                <div class="adv-input-filters">
+                                    <div class="container flex">
+                                        <div class="adv-filter-date calendar-container calendar-container--left flex">
+                                            <div class="js-calendar-filter-wrapper-before wrapper">
+                                                <label class="calendar-open-btn--double">
+                                                    <span class="placeholder">От</span>
+                                                    <div class="date-input-field date-from">
+                                                        <input placeholder="ДД" type="tel" class="day js-calendar-filter-before-day">
+                                                        <span>.</span>
+                                                        <input placeholder="ММ" type="tel" class="month js-calendar-filter-before-month">
+                                                        <span>.</span>
+                                                        <input placeholder="ГГГГ" type="tel" class="year js-calendar-filter-before-year">
+                                                    </div>
+                                                    <span class="date-value js-calendar-filter-date-before" id="adv-filter-date-from"></span>
+                                                </label>
+                                                <span aria-controls="adv-filter-date-from" class="js-filter-calendar__cross-before hint icon cross icon-cross-svgrepo-com">
+                                                    <span class="hint__text hint__text--center">Очистить поле?</span>
+                                                </span>
+                                            </div>
+                                            <div class="js-calendar-filter-wrapper-after wrapper">
+                                                <label class="calendar-open-btn--double">
+                                                    <span class="placeholder">До</span>
+                                                    <div class="date-input-field date-to">
+                                                        <input placeholder="ДД" type="tel" class="day js-calendar-filter-after-day">
+                                                        <span>.</span>
+                                                        <input placeholder="ММ" type="tel" class="month js-calendar-filter-after-month">
+                                                        <span>.</span>
+                                                        <input placeholder="ГГГГ" type="tel" class="year js-calendar-filter-after-year">
+                                                    </div>
+                                                    <span class="date-value js-calendar-filter-date-after" id="adv-filter-date-to"></span>
+                                                </label>
+                                                <span aria-controls="adv-filter-date-to" class="js-filter-calendar__cross-after hint icon cross icon-cross-svgrepo-com">
+                                                    <span class="hint__text hint__text--center">Очистить поле?</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="actions container">
+                                <div class="flex underline overline">
+                                    <div class="actions__container flex" style="--flex-gap: 20px">
+                                        <div class="checkbox" role="checkbox" style="--checkbox-size: 40px">
+                                            <div class="checkbox__inner"></div>
+                                        </div>
+                                    </div>
+                                    <div class="action-sort select" id="action-sort" aria-expanded="false" data-empty="true">
+                                        <div class="select__body">
+                                            <span id="adv-sort-field" class="text"></span>
+                                            <span class="icon icon-arrow-down"></span>
+                                        </div>
+                                        <span aria-controls="adv-sort-field" class="hint icon cross icon-cross-svgrepo-com">
+                                            <span class="hint__text hint__text--center">Очистить поле?</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="ads">
+                                <div class="container">
+                                    <div class="ads__field-names grid underline">
+                                        <div class="ads__field-names--big">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
+                        <div class="modal">
+                            <div class="modal__content flow-y">
+                                <div class="modal__header flow-x"></div>
+                                <div class="modal__body"></div>
+                                <div class="modal__footer flow-x"></div>
+                            </div>
+                        </div>
+                        <div class="cover hidden"></div>
+                    </div>
+                </div>
+
+                <div class="filters__select filters__region js-work-resume js-filter" data-title="Работа с резюме" data-inform="">
+                    <div class="filters__region-title filters__title js-title">
+                        <div class="filters__caption js-filters-caption-join">
+                            <div class="filters__caption-description-container">
+                                <span class="filters__caption-description js-filters-caption">
+                                </span>
+                            </div>
+                            <div class="filters__arrow js-arrow">
+                                <div class="icon-arrow-down"></div>
+                            </div>
+                        </div>
+                        <div class="filters__functions-section">
+                            <div class="filters__close-list js-close-list">
+                                <div class="icon-close-down"></div>
+                                <div class="filters__tab-information-cross">
+                                    <div class="filters__tab-information-cross-back"></div>
+                                    <div class="filters__tab-information-decor">
+                                        <div class="filters__tab-information-decor-border"></div>
+                                    </div>
+                                    <span class="filters__tab-information-text">Очистить поле?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters__region-drop-down filters__drop-down js-drop-down">
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Убрать из подходящих</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Кандидат</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">На собеседовании</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Работает у нас</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Работал у нас</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Отказано</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filters__select filters__region js-to-type-add js-filter" data-title="По типу добавления" data-inform="">
+                    <div class="filters__region-title filters__title js-title">
+                        <div class="filters__caption js-filters-caption-join">
+                            <div class="filters__caption-description-container">
+                                <span class="filters__caption-description js-filters-caption">
+                                </span>
+                            </div>
+                            <div class="filters__arrow js-arrow">
+                                <div class="icon-arrow-down"></div>
+                            </div>
+                        </div>
+                        <div class="filters__functions-section">
+                            <div class="filters__close-list js-close-list">
+                                <div class="icon-close-down"></div>
+                                <div class="filters__tab-information-cross">
+                                    <div class="filters__tab-information-cross-back"></div>
+                                    <div class="filters__tab-information-decor">
+                                        <div class="filters__tab-information-decor-border"></div>
+                                    </div>
+                                    <span class="filters__tab-information-text">Очистить поле?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters__region-drop-down filters__drop-down js-drop-down">
+                        <label type="text" data-select="" class="filters__name-region js-name-region-radio">
+                            <input type="radio" name="default" class="filters__region-radio js-region-radio">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Отклик</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region-radio">
+                            <input type="radio" name="default" class="filters__region-radio js-region-radio">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Подбор от ВВН</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region-radio">
+                            <input type="radio" name="default" class="filters__region-radio js-region-radio">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Подбор по подписке</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region-radio">
+                            <input type="radio" name="default" class="filters__region-radio js-region-radio">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">”Наши” - добавлены нами</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filters__select filters__region js-to-education js-filter" data-title="По образованию" data-inform="">
+                    <div class="filters__region-title filters__title js-title">
+                        <div class="filters__caption js-filters-caption-join">
+                            <div class="filters__caption-description-container">
+                                <span class="filters__caption-description js-filters-caption">
+                                </span>
+                            </div>
+                            <div class="filters__arrow js-arrow">
+                                <div class="icon-arrow-down"></div>
+                            </div>
+                        </div>
+                        <div class="filters__functions-section">
+                            <div class="filters__close-list js-close-list">
+                                <div class="icon-close-down"></div>
+                                <div class="filters__tab-information-cross">
+                                    <div class="filters__tab-information-cross-back"></div>
+                                    <div class="filters__tab-information-decor">
+                                        <div class="filters__tab-information-decor-border"></div>
+                                    </div>
+                                    <span class="filters__tab-information-text">Очистить поле?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters__region-drop-down filters__drop-down js-drop-down">
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Школа общее образование</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Школа среднее образование</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Начальное профессиональное (ПТУ)</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Среднее профессиональное (ССУЗ)</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Высшее профессиональное (ВУЗ)</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Бакалавриат</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Магистратура</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filters__select filters__region js-to-favorite js-filter" data-title="В избранном/В черном списке" data-inform="">
+                    <div class="filters__region-title filters__title js-title">
+                        <div class="filters__caption js-filters-caption-join">
+                            <div class="filters__caption-description-container">
+                                <span class="filters__caption-description js-filters-caption">
+                                </span>
+                            </div>
+                            <div class="filters__arrow js-arrow">
+                                <div class="icon-arrow-down"></div>
+                            </div>
+                        </div>
+                        <div class="filters__functions-section">
+                            <div class="filters__close-list js-close-list">
+                                <div class="icon-close-down"></div>
+                                <div class="filters__tab-information-cross">
+                                    <div class="filters__tab-information-cross-back"></div>
+                                    <div class="filters__tab-information-decor">
+                                        <div class="filters__tab-information-decor-border"></div>
+                                    </div>
+                                    <span class="filters__tab-information-text">Очистить поле?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters__region-drop-down filters__drop-down js-drop-down">
+                        <label type="text" data-select="" class="filters__name-region js-name-region-radio">
+                            <input type="radio" name="default" class="filters__region-radio js-region-radio">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">В избранном</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region-radio">
+                            <input type="radio" name="default" class="filters__region-radio js-region-radio">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">В черном списке</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filters__select filters__region js-to-vacancy js-filter" data-title="По вакансии из нашего объявления" data-inform="">
+                    <div class="filters__region-title filters__title js-title">
+                        <div class="filters__caption js-filters-caption-join">
+                            <div class="filters__caption-description-container">
+                                <span class="filters__caption-description js-filters-caption">
+                                </span>
+                            </div>
+                            <div class="filters__arrow js-arrow">
+                                <div class="icon-arrow-down"></div>
+                            </div>
+                        </div>
+                        <div class="filters__functions-section">
+                            <div class="filters__close-list js-close-list">
+                                <div class="icon-close-down"></div>
+                                <div class="filters__tab-information-cross">
+                                    <div class="filters__tab-information-cross-back"></div>
+                                    <div class="filters__tab-information-decor">
+                                        <div class="filters__tab-information-decor-border"></div>
+                                    </div>
+                                    <span class="filters__tab-information-text">Очистить поле?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters__region-drop-down filters__drop-down js-drop-down">
+                        <div class="filters__search-region-container"> 
+                            <input type="text" class="filters__search-region js-filters-search" placeholder="Поиск">
+                        </div>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Агроном</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Плотник</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Столяр</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Штукатур</span>
+                            </span>
+                        </label>
+                        <div class="filters__drop-down-apply js-drop-down-apply">
+                            Применить
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters__select filters__region js-to-zodiac js-filter" data-variant-zodiac data-title="По зодиаку" data-inform="">
+                    <div class="filters__region-title filters__title js-title">
+                        <div class="filters__caption js-filters-caption-join">
+                            <div class="filters__caption-description-container">
+                                <div class="filters__caption-icon-zodiac js-filters-caption-icon-zodiac">
+                                </div>
+                                <span class="filters__caption-description js-filters-caption">
+                                </span>
+                            </div>
+                            <div class="filters__arrow js-arrow">
+                                <div class="icon-arrow-down"></div>
+                            </div>
+                        </div>
+                        <div class="filters__functions-section">
+                            <div class="filters__close-list js-close-list">
+                                <div class="icon-close-down"></div>
+                                <div class="filters__tab-information-cross">
+                                    <div class="filters__tab-information-cross-back"></div>
+                                    <div class="filters__tab-information-decor">
+                                        <div class="filters__tab-information-decor-border"></div>
+                                    </div>
+                                    <span class="filters__tab-information-text">Очистить поле?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters__region-drop-down filters__drop-down js-drop-down">
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name" >
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-kozerog" data-variant-kozerog>Козерог</span>
+                                <span class="filters__region-numbers js-region-numbers">22.12.-20.01.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-vodoley" data-variant-vodoley>Водолей</span>
+                                <span class="filters__region-numbers js-region-numbers">21.01.-18.02.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-fish" data-variant-fish>Рыбы</span>
+                                <span class="filters__region-numbers js-region-numbers">19.02.-20.03.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-oven" data-variant-oven>Овен </span>
+                                <span class="filters__region-numbers js-region-numbers">21.03.-19.04.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-telec" data-variant-telec>Телец</span>
+                                <span class="filters__region-numbers js-region-numbers">20.04.-20.05.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-bliz" data-variant-bliz>Близнецы</span>
+                                <span class="filters__region-numbers js-region-numbers">21.05.-21.06.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-rak" data-variant-rak>Рак</span>
+                                <span class="filters__region-numbers js-region-numbers">22.06.-22.07.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-lev" data-variant-lev>Лев</span>
+                                <span class="filters__region-numbers js-region-numbers">23.07.-22.08.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-deva" data-variant-deva>Дева</span>
+                                <span class="filters__region-numbers js-region-numbers">23.08.-22.09.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-ves" data-variant-ves>Весы</span>
+                                <span class="filters__region-numbers js-region-numbers">23.09.-23.10.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-scorpion" data-variant-scorpion>Скорпион</span>
+                                <span class="filters__region-numbers js-region-numbers">24.10.-22.11.</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region">
+                            <input type="checkbox" class="filters__region-checkbox js-region-checkbox">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name" data-zodiac="data-variant-strelec" data-variant-strelec>Стрелец</span>
+                                <span class="filters__region-numbers js-region-numbers">23.11.-21.12.</span>
+                            </span>
+                        </label>
+                        <div class="filters__drop-down-apply js-drop-down-apply">
+                            Применить
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters__select filters__region js-to-comment js-filter" data-title="По комментарию" data-inform="">
+                    <div class="filters__region-title filters__title js-title">
+                        <div class="filters__caption js-filters-caption-join">
+                            <div class="filters__caption-description-container">
+                                <span class="filters__caption-description js-filters-caption">
+                                </span>
+                            </div>
+                            <div class="filters__arrow js-arrow">
+                                <div class="icon-arrow-down"></div>
+                            </div>
+                        </div>
+                        <div class="filters__functions-section">
+                            <div class="filters__close-list js-close-list">
+                                <div class="icon-close-down"></div>
+                                <div class="filters__tab-information-cross">
+                                    <div class="filters__tab-information-cross-back"></div>
+                                    <div class="filters__tab-information-decor">
+                                        <div class="filters__tab-information-decor-border"></div>
+                                    </div>
+                                    <span class="filters__tab-information-text">Очистить поле?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters__region-drop-down filters__drop-down js-drop-down">
+                        <label type="text" data-select="" class="filters__name-region js-name-region-radio">
+                            <input type="radio" name="default" class="filters__region-radio js-region-radio">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Есть комментарий</span>
+                            </span>
+                        </label>
+                        <label type="text" data-select="" class="filters__name-region js-name-region-radio">
+                            <input type="radio" name="default" class="filters__region-radio js-region-radio">
+                            <span class="filters__region-caption js-filters-region-name">
+                                <span class="filters__region-name js-region-name">Нет комментария</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" onClick="window.location.reload()" class="filters__clean-filters js-clean-filters" disabled>Очистить все фильтры</button>
+            </div>
+        </div>
+
+        <div class="fast-search">
+            <div class="fast-search__fio fast-search__caption">
+                <div class="fast-search__fio-caption">ФИО/Последнее активное резюме</div>
+                <div class="fast-search__all-active-vacancy">Всего:</div>
+                <span class="fast-search__all-vacancy-list">
+                    <span class="fast-search__all-active-vacancy-number">
+                        <span class="fast-search__all-active-vacancy-number js-all-active-vacancy">
+                        </span> 
+                        <div class="fast-search__all-active-vacancy-tab">
+                            Всего вакансий
+                        </div>
+                    </span>
+                    <span class="fast-search__new-vacancy-caption">
+                        (+<span class="fast-search__new-vacancy-counter js-new-upload-vacancy">14</span>)
+                        <div class="fast-search__new-vacancy-counter-tab">Новые резюме</div>
+                    </span>
+                </span>
+            </div>
+            <div class="fast-search__birhday fast-search__caption">Возраст/Год рождения</div>
+            <div class="fast-search__vacancy fast-search__caption">Вакансию на которую откликнулся</div>
+            <div class="fast-search__date-added fast-search__caption">Дата  загрузки/Источник резюме</div>
+            <div class="fast-search__phone fast-search__caption">Телефон</div>
+            <div class="fast-search__region fast-search__caption">Регион/Населенный пункт и район проживания</div>
+            <div class="fast-search__hwo-added fast-search__caption">Кто добавил</div>
+            <div class="fast-search__favorite fast-search__caption">Избранное/ Черный список</div>
+            <div class="fast-search__comments fast-search__caption">Мои комментарии/Работа с резюме</div>
+            <div class="fast-search__comments fast-search__caption">Фото соискателя/Посещение сайта</div>
+        </div>
+
+        <div class="fast-search-functional js-fast-search-functional">
+            <div class="fast-search-functional__input-container">
+                <input type="text" placeholder="Поиск" class="fast-search-functional__name fast-search-functional__input js-name">
+            </div>
+            <div class="fast-search-functional__input-container">
+                <input type="text" placeholder="Поиск" class="fast-search-functional__name fast-search-functional__input js-name">
+            </div>
+            <div class="fast-search-functional__input-container">
+                <input type="text" placeholder="Поиск" class="fast-search-functional__name fast-search-functional__input js-profession">
+            </div>
+            <div class="fast-search-functional__input-container">
+                <input type="text" placeholder="Поиск" class="fast-search-functional__name fast-search-functional__input js-name">
+            </div>
+            <div class="fast-search-functional__input-container">
+                <input type="text" placeholder="Поиск" class="fast-search-functional__name fast-search-functional__input  js-name">
+            </div>
+            <div class="fast-search-functional__input-container">
+                <input type="text" placeholder="Поиск" class="fast-search-functional__name fast-search-functional__input  js-name">
+            </div>
+            <div class="fast-search-functional__input-container">
+                <input type="text" placeholder="Поиск" class="fast-search-functional__name fast-search-functional__input js-who-added">
+            </div>
+            <div class="fast-search-functional__input-container">
+                <input type="text" placeholder="Поиск" class="fast-search-functional__name fast-search-functional__input  js-name">
+            </div>
+            <div class="fast-search-functional__input-container">
+                <input type="text" placeholder="Поиск" class="fast-search-functional__name fast-search-functional__input  js-name">
+            </div>
+            <div class="fast-search-functional__input-container">
+                <input type="text" placeholder="Поиск" class="fast-search-functional__name fast-search-functional__input  js-name">
+            </div>
+        </div>
+
+        <div class="create-applicant js-applicant">
+        </div>
+    </div>
+    <script src="js/calendar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./blocks/create-applicant/init-create-applicant.js" type="module"></script>
+    <script src="./blocks/filters/init-filters.js" type="module"></script>
+    <script src="./blocks/start-popup/start-popup-init.js" type="module"></script>
+    <script src="./blocks/calendar/filter-calendar-init.js" type="module"></script>
+</body>
+</html>

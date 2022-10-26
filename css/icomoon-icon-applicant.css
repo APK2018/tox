@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "icomoon-icon-applicant";
+  src: url("../fonts/icomoon-icon-applicant.eot");
+  src: url("../fonts/icomoon-icon-applicant.eot") format("embedded-opentype"),
+    url("../fonts/icomoon-icon-applicant.ttf") format("truetype"),
+    url("../fonts/icomoon-icon-applicant.woff") format("woff"),
+    url("../fonts/icomoon-icon-applicant.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-applicant-"],
+[class*=" icon-applicant-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon-icon-applicant" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e7";
+}
+.icon-question-circle:before {
+  content: "\e1";
+}
+.icon-heart-fill:before {
+  content: "\e2";
+}
+.icon-heart:before {
+  content: "\e3";
+}
+.icon-pencil-fill:before {
+  content: "\e4";
+}
+.icon-method-draw-image-3:before {
+  content: "\e6";
+}
+.icon-dislike-svgrepo-com:before {
+  content: "\e5";
+}
+
+.about-applicant__redacting:before {
+  content: "\e4";
+  font-family: "icomoon-icon-applicant";
+  font-size: 12px;
+  color: #2596ce;
+}
+
+.about-applicant__comment-text-tab-icon:after {
+  content: "\e1";
+  font-family: "icomoon-icon-applicant";
+  font-size: 14px;
+  border-radius: 50%;
+}
+
+.about-applicant__comment-text-tab-icon:hover:after {
+  color: #fff;
+  background-color: #ffdd00;
+  font-size: 15px;
+}
+
+.about-applicant__add-black-list-icon:before {
+  content: "\e5";
+  font-family: "icomoon-icon-applicant";
+  color: #2596ce;
+  font-weight: bold;
+}
+
+.about-applicant__add-black-list-icon.about-applicant__icon-active:before {
+  content: "\e6";
+  font-family: "icomoon-icon-applicant";
+  color: #f00600;
+  font-weight: 100;
+}
+
+.about-applicant__add-favorite-icon:before {
+  font-family: "icomoon-icon-applicant";
+  content: "\e3";
+  color: #2596ce;
+  font-weight: bold;
+}
+
+.about-applicant__add-favorite-icon.about-applicant__icon-active:before {
+  font-family: "icomoon-icon-applicant";
+  content: "\e2";
+  color: #f00600;
+  font-weight: bold;
+}
+
+.filters__search-region-container:before {
+  font-family: "icomoon-icon-applicant";
+  content: "\e7";
+  position: absolute;
+  font-size: 13px;
+  left: 9px;
+  top: 16px;
+}
+

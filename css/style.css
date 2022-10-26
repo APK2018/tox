@@ -1,0 +1,96 @@
+.start-popup {
+    max-width: 450px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #db0b23;
+    padding: 15px 25px 15px 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+  
+  .start-popup__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 83px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .start-poup__warning-info {
+    color: #db0b23;
+    background-color: #fff;
+    padding: 8px 15px;
+    font-size: 37px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .start-popup__caption {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .start-popup__days {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .start-popup__bottom-caption {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .start-popup__phone-number-caption {
+    color: #3f4443;
+    font-weight: bold;
+  }
+  
+  .start-popup__phone-number {
+    color: #1173d3;
+    font-weight: bold;
+  }
+  
+  .start-popup-cover {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 97;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    display: block;
+  }
+  
+  .start-popup__close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -31px;
+    right: 4px;
+    cursor: pointer;
+  }
+  
+  .start-popup_hidden {
+    display: none;
+  }
+  
+  .start-popup__close:after {
+    font-family: "icomoon";
+    content: "\e900";
+    color: #fff;
+    width: 25px;
+    height: 25px;
+  }
+  

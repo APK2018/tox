@@ -1,0 +1,1032 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "ZabraProRegular", "sans-serif";
+  font-size: 23px;
+  background-color: #fbf7da;
+}
+
+.main-content {
+  max-width: 1450px;
+  margin: 50px auto 0 auto;
+  padding: 20px;
+  background-color: #fffef4;
+}
+
+.title-page__applicant-add {
+  width: 51px;
+  height: 42px;
+  background-image: url("../../assets/images/applicant-add.png");
+  cursor: pointer;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+}
+
+.title-page__applicant-add:hover {
+  background-image: url("../../assets/images/applicant-add-hover.png");
+}
+
+.title-page {
+  margin-bottom: 30px;
+}
+
+.title-page__title {
+  font-size: 33px;
+  color: #665800;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.title-page__list-caption {
+  text-decoration: underline;
+  font-size: 23px;
+}
+
+.title-page__list-separator {
+  font-size: 23px;
+}
+
+.title-page__list-description {
+  font-size: 23px;
+}
+
+.title-page__list-about {
+  display: flex;
+  font-size: 0;
+  color: #665800;
+  align-items: center;
+}
+
+.filters {
+  margin-bottom: 30px;
+}
+
+.filters__selects {
+  /* display: grid; */
+  background-color: #f4f4f4;
+  /* grid-template-columns: minmax(340px, 1fr) minmax(340px, 1fr) minmax(340px, 1fr) minmax(400px, 1fr) ;  */
+  /* grid-gap: 1rem; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 25px 15px 15px;
+}
+
+.js-to-regions,
+.js-to-age,
+.js-to-status,
+.js-work-resume,
+.js-to-type-add,
+.js-work-resume,
+.js-to-education,
+.js-to-vacancy,
+.js-to-zodiac,
+.js-to-comment {
+  width: 305px;
+  margin-bottom: 10px;
+}
+
+.calendar-container--left {
+  width: 465px;
+  height: 50px;
+}
+
+.js-calendar-open-btn--double {
+  display: flex;
+  align-items: center;
+}
+
+.js-to-favorite {
+  width: 465px;
+}
+
+.js-clean-filters {
+  width: 465px;
+  height: 50px;
+}
+
+.filters__select {
+  height: 50px;
+  position: relative;
+  border: 1px solid #e8e4c7;
+  user-select: none;
+}
+
+.filters__select:hover,
+.filters__select:focus {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.filters__caption {
+  width: 100%;
+  max-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.filters__caption.background-yellow {
+  font-weight: bold;
+}
+
+.filters__caption.background-yellow:hover > .filters__caption-description {
+  text-shadow: #000 0 0 1px;
+  color: #000;
+}
+
+.filters__clean-filters {
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: bold;
+  color: #707070;
+  border: 2px solid #707070;
+}
+
+.filters__clean-filters:disabled {
+  cursor: no-drop;
+}
+
+.filters__clean-filters_active {
+  border: 2px solid #ff0000;
+  color: #fff;
+  background-color: #ff0000;
+}
+
+.filters__caption-description-container {
+  max-width: 202px;
+}
+
+.js-to-zodiac .filters__caption-description-container {
+  display: flex;
+  align-items: center;
+}
+
+.filters__caption-icon-zodiac {
+  width: 20px;
+  height: 20px;
+  margin-left: 6px;
+  display: none;
+}
+
+.js-calendar-filter {
+  position: relative;
+}
+
+.js-calendar-perid-day-left-btn:hover > .js-calendar-perid-day-left-btn-tab {
+  display: block;
+}
+
+.js-calendar-perid-month-left-btn:hover
+  > .js-calendar-perid-month-left-btn-tab {
+  display: block;
+}
+
+.js-calendar-perid-all-left-btn:hover > .js-calendar-perid-all-left-btn-tab {
+  display: block;
+}
+
+.js-calendar-perid-all-right-btn:hover > .js-calendar-perid-all-right-btn-tab {
+  display: block;
+}
+
+.js-calendar-perid-month-right-btn:hover
+  > .js-calendar-perid-month-right-btn-tab {
+  display: block;
+}
+
+.filter-region-container-pc {
+  height: 120px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.js-calendar-filter-wrapper-before {
+  height: 40px;
+}
+
+.js-calendar-filter-wrapper-after {
+  height: 40px;
+}
+
+.filter-age-container-pc {
+  height: 120px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.filter-status-container-pc {
+  height: 120px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.filter-calendar-container-all {
+  height: 109px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.js-calendar-perid-day-right-btn:hover > .js-calendar-perid-day-right-btn-tab {
+  display: block;
+}
+
+.js-calendar-perid-day-right-btn-tab {
+  display: none;
+  position: absolute;
+  width: fit-content;
+  padding: 5px;
+  font-size: 20px;
+  color: #867a30;
+  border-radius: 2px;
+  border: 1px solid #cdced2;
+  background-color: #fcf8df;
+  z-index: 99;
+  font-weight: bold;
+  top: -30px;
+  left: 20px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.js-calendar-perid-month-right-btn-tab {
+  display: none;
+  position: absolute;
+  width: fit-content;
+  padding: 5px;
+  font-size: 20px;
+  color: #867a30;
+  border-radius: 2px;
+  border: 1px solid #cdced2;
+  background-color: #fcf8df;
+  z-index: 99;
+  font-weight: bold;
+  top: -30px;
+  left: 20px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.js-calendar-perid-all-right-btn-tab {
+  display: none;
+  position: absolute;
+  width: fit-content;
+  padding: 5px;
+  font-size: 20px;
+  color: #867a30;
+  border-radius: 2px;
+  border: 1px solid #cdced2;
+  background-color: #fcf8df;
+  z-index: 99;
+  font-weight: bold;
+  top: -30px;
+  left: 20px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.js-calendar-perid-all-left-btn-tab {
+  display: none;
+  position: absolute;
+  width: fit-content;
+  padding: 5px;
+  font-size: 20px;
+  color: #867a30;
+  border-radius: 2px;
+  border: 1px solid #cdced2;
+  background-color: #fcf8df;
+  z-index: 99;
+  font-weight: bold;
+  top: -30px;
+  left: 20px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.js-calendar-perid-month-left-btn-tab {
+  display: none;
+  position: absolute;
+  width: fit-content;
+  padding: 5px;
+  font-size: 20px;
+  color: #867a30;
+  border-radius: 2px;
+  border: 1px solid #cdced2;
+  background-color: #fcf8df;
+  z-index: 99;
+  font-weight: bold;
+  top: -30px;
+  left: 20px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.js-calendar-perid-day-left-btn-tab {
+  display: none;
+  position: absolute;
+  width: fit-content;
+  padding: 5px;
+  font-size: 20px;
+  color: #867a30;
+  border-radius: 2px;
+  border: 1px solid #cdced2;
+  background-color: #fcf8df;
+  z-index: 99;
+  font-weight: bold;
+  top: -30px;
+  left: 20px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.js-calendar-top-period {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: -67px;
+  display: flex;
+  justify-content: center;
+}
+
+.js-calendar-top-period > div {
+  margin-left: 30px;
+}
+
+.js-calendar-top-period > div:first-child {
+  margin-left: 0;
+}
+
+.btn-day-after-translate {
+  transform: translateX(6px);
+}
+
+.js-calendar-perid-day-left-btn {
+  width: 32px;
+  height: 23px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.js-calendar-perid-day-left-btn .arrow-6 svg {
+  width: 30px;
+}
+
+.js-calendar-perid-month-left-btn {
+  width: 32px;
+  height: 23px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.js-calendar-perid-all-left-btn {
+  width: 16px;
+  height: 23px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.btn-day-left-transition-rotate {
+  transform: rotateY(150deg) translate(-10px);
+}
+
+.js-calendar-perid-all-right-btn {
+  width: 16px;
+  height: 23px;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+}
+
+.js-calendar-perid-all-right-btn .arrow-6 {
+  left: 0;
+}
+
+.arrow-all-period-right-1 {
+  display: none;
+}
+
+.arrow-all-period-right-2 {
+  display: none;
+}
+
+.js-calendar-perid-month-right-btn {
+  width: 32px;
+  height: 23px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.js-calendar-perid-all-left-btn .arrow-6 {
+  left: -4px;
+}
+
+.js-calendar-perid-all-left-btn:hover > .arrow-all-period-left-1 {
+  display: block;
+}
+
+.js-calendar-perid-all-left-btn:hover > .arrow-all-period-left-2 {
+  display: block;
+}
+
+.arrow-all-period-left-1 {
+  display: none;
+}
+
+.arrow-all-period-left-2 {
+  display: none;
+}
+
+.js-calendar-perid-month-right-btn .arrow-6 {
+  left: 8px;
+}
+
+.js-calendar-perid-day-right-btn {
+  width: 32px;
+  height: 23px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.js-calendar-perid-day-left {
+  width: 33px;
+  height: 33px;
+  background-image: url("../../assets/images/day-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.js-calendar-perid-month-left {
+  width: 33px;
+  height: 33px;
+  background-image: url("../../assets/images/month-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.js-calendar-perid-all-left {
+  width: 33px;
+  height: 33px;
+  background-image: url("../../assets/images/all-period.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.js-calendar-perid-month-right {
+  width: 33px;
+  height: 33px;
+  background-image: url("../../assets/images/month-right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.js-calendar-perid-day-right {
+  width: 33px;
+  height: 33px;
+  background-image: url("../../assets/images/day-right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.filters__caption-icon-zodiac_show {
+  display: block;
+}
+
+.js-to-favorite .filters__caption-description-container {
+  max-width: 100%;
+}
+
+.filters__caption-description {
+  padding: 9px 0 9px 10px;
+  display: flex;
+  font-size: 21px;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.filters__caption.background-yellow:hover {
+  background-color: #fede31;
+}
+
+.filters__caption.background-yellow:hover > .filters__arrow {
+  background-color: #fede31;
+}
+
+.filters__region-drop-down {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.filters__all-region-caption {
+  color: #665800;
+}
+
+.filters__name-region {
+  border-bottom: 1px solid #eeeeee;
+  padding: 7px 0 7px 5px;
+  cursor: pointer;
+  color: #665800;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 20px;
+}
+
+.filters__region-checkbox {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+
+.filters__name-region:hover {
+  background-color: #fede31;
+}
+
+.filters__name-region.background-yellow:hover {
+  background-color: #fede31;
+}
+
+.filters__caption.background-yellow > .filters__caption-description {
+  font-weight: bold;
+}
+
+.filters__region-checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  border-radius: 3px;
+  background-color: #f4f4f4;
+  border: 2px solid #e9e9e9;
+}
+
+.calendar-wrapper_hidden {
+  display: none;
+}
+
+.filters__region-checkbox:checked {
+  background-color: #ff0000;
+  box-shadow: 0px 0px 0px 1px rgba(255, 0, 0, 1);
+}
+
+.js-calendar-filter {
+  height: 50px;
+}
+
+.filters__region-radio {
+  appearance: none;
+}
+
+.js-to-vacancy .filters__caption-description-container {
+  max-width: 242px;
+}
+
+.js-to-vacancy
+  .filters__caption.background-yellow
+  .filters__caption-description-container {
+  max-width: 202px;
+}
+
+.js-name-region-radio.active-region {
+  color: #bfbfbf;
+}
+
+.js-name-region-radio > .filters__region-caption {
+  padding-left: 7px;
+}
+
+.filters__region-title {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 20px;
+  color: #665800;
+  cursor: pointer;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.filters__arrow {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.filters__region-drop-down {
+  display: none;
+}
+
+.filters__search-region-container {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+
+.filters__search-region {
+  font-size: 20px;
+  border: 1px solid #eeeeee;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.filters__search-region::placeholder {
+  color: red;
+}
+
+.filters__all-regions {
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.filters__all-region-separator {
+  color: #6ba632;
+  margin-left: 14px;
+  margin-right: 7px;
+}
+
+.filters__drop-down {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  background-color: #fff;
+  user-select: none;
+  border: 1px solid #e8e4c7;
+  z-index: 99;
+}
+
+.filters__drop-down-apply {
+  height: 20px;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 12px 12px 15px 12px;
+  margin: 10px auto 10px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.filters__list-all-regions {
+  display: none;
+  flex-direction: column;
+}
+
+.filters__close-list {
+  display: none;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  background-color: #f7f3db;
+  color: #f3c000;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.filters__close-list:hover {
+  background-color: #fede31;
+}
+
+.filters__close-list:hover > .filters__tab-information-cross {
+  display: flex;
+}
+
+.filters__close-list:hover > .filters__close-list-cross {
+  color: #ff0000;
+  text-shadow: none;
+}
+
+.filters__close-list-cross {
+  color: #f3c000;
+  transform: rotate(45deg);
+  font-size: 25px;
+  text-shadow: #f3c000 0px 0px 1px;
+}
+
+.filters__tab-information-cross-back {
+  position: absolute;
+  width: 50px;
+  height: 12px;
+  z-index: 99;
+  top: -0.5px;
+  background-color: #fff9e0;
+  text-shadow: none;
+}
+
+.filters__tab-information-cross {
+  position: absolute;
+  top: 50px;
+  width: 150px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff9e0;
+  font-size: 16px;
+  z-index: 999;
+  border: 2px solid #fede31;
+}
+
+.filters__tab-information-decor {
+  position: absolute;
+  top: -30px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid #fede31;
+  z-index: 9;
+}
+
+.filters__tab-information-decor-border {
+  position: absolute;
+  top: -13.5px;
+  left: -15.2px;
+  height: 20px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #fff9e0;
+  z-index: 10;
+}
+
+.filters__region-caption {
+  padding-left: 32px;
+}
+
+[data-variant-kozerog]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Козерог.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-vodoley]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Водолей.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-fish]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Рыба.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-oven]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Овен.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-telec]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Телец.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-bliz]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Близнецы.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-rak]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Рак.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-lev]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Лев.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-deva]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Дева.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-ves]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Весы.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-scorpion]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Скорпион.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+[data-variant-strelec]:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/zodiac/Стрелец.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
+.fast-search {
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1rem;
+  padding: 11px;
+  color: #8a707b;
+  background-color: #fff;
+}
+
+.fast-search__caption {
+  max-width: 123px;
+  font-size: 20px;
+}
+
+.fast-search__fio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fast-search__fio-caption {
+  margin-bottom: 10px;
+}
+
+.arrow-6 {
+  position: absolute;
+  left: 5px;
+}
+
+.arrow-6 svg {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  overflow: visible;
+}
+.arrow-6 svg polygon,
+.arrow-6 svg path {
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  fill: #337ab7;
+}
+.arrow-6 svg:hover polygon,
+.arrow-6 svg:hover path {
+  transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+  fill: #000;
+}
+.arrow-6 svg:hover .arrow-6-pl {
+  animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-6 svg:hover .arrow-6-pl-fixed {
+  animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
+@keyframes arrow-6-anim {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(-0.1rem);
+  }
+  100% {
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+}
+@keyframes arrow-6-fixed-anim {
+  5% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Состояния */
+.active-flex {
+  display: flex;
+}
+
+.active-filter {
+  background-color: #fff;
+}
+
+.change-color-red {
+  color: #ff0000;
+}
+
+.background-yellow {
+  background-color: #fcf8df;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.rotate-arrow {
+  transform: rotate(-90deg);
+}
+
+.hidden {
+  display: none;
+}

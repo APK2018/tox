@@ -1,0 +1,30 @@
+.fast-search-functional {
+  padding: 5px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1rem;
+}
+
+.fast-search-functional__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.fast-search-functional__input-container {
+  border: 1px solid #665800;
+  position: relative;
+  padding: 2px 5px 5px 23px;
+}
+
+.fast-search-functional__input-container:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url('../../assets/images/search.png');
+  left: 5px;
+  top: 12px;
+}
